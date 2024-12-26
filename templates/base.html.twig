@@ -3,7 +3,20 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content="Découvrez Bytemeuh, la référence en solutions innovantes pour le digital et la technologie. Trouvez nos services, conseils, et réalisations pour transformer votre présence en ligne.">
+        <meta name="keywords" content="Bytemeuh, digital, technologie, solutions digitales, transformation digitale">
+
+        <meta property="og:title" content="Bytemeuh - Solutions Digitales Innovantes">
+        <meta property="og:description" content="Découvrez Bytemeuh, la référence en solutions digitales et technologies innovantes pour votre entreprise.">
+
+        <meta property="og:image" content="https://sruuua.com/image-bytemeuh.jpg">
+        <meta property="og:url" content="{{ app.request.uri }}">
+        <meta property="og:type" content="website">
+
+        <meta name="google-site-verification" content="{{ google_key }}" />
+
         {% block stylesheets %}
         {% endblock %}
 

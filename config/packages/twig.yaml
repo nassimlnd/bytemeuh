@@ -1,5 +1,7 @@
 twig:
     file_name_pattern: '*.twig'
+    globals:
+      google_key: "%env(string:GOOGLE_KEY)%"
 
 when@test:
     twig:
