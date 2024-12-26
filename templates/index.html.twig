@@ -1,9 +1,10 @@
 {% extends "base.html.twig" %}
 
 {% block title %}Bytemeuh - Solutions Digitales Innovantes et Transformation Technologique{% endblock %}
+{% block description %}Découvrez Bytemeuh, la référence en solutions innovantes pour le digital et la technologie. Trouvez nos services, conseils, et réalisations pour transformer votre présence en ligne.{% endblock %}
 
 {% block body %}
- <header>
+    <header>
         <h1>Bytemeuh - Solutions Digitales et Innovation Technologique</h1>
         <p>Bienvenue sur Bytemeuh, votre partenaire de confiance pour la transformation numérique et les solutions
             technologiques modernes.</p>
@@ -40,8 +41,8 @@
             <h2>Nos Réalisations</h2>
             <p>Découvrez quelques projets récents qui mettent en avant l'impact de Bytemeuh dans le secteur digital.</p>
             <div>
-                <img src="https://www.radiofrance.fr/s3/cruiser-production/2014/07/50d7835e-62b1-418c-b12b-bb2ed02aceb8/1200x680_shrek-5.jpg" alt="Projet 1 - Site Web E-commerce" loading="lazy">
-                <img src="https://blog.secur-cloud.fr/wp-content/uploads/2023/02/php.png" alt="Projet 2 - Application Mobile" loading="lazy">
+                <img src="{{ asset('/img/design.webp') }}" alt="Projet 1 - Site Web E-commerce" loading="lazy">
+                <img src="{{ asset('/img/fortnite.webp') }}" alt="Projet 2 - Application Mobile" loading="lazy">
             </div>
         </section>
     </main>
