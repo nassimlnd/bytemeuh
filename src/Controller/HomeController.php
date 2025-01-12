@@ -12,17 +12,9 @@ use Symfony\Component\Routing\Attribute\Route;
 
 final class HomeController extends AbstractController
 {
-    #[Route('/', name: 'home')]
+    #[Route('/', name: 'app_home')]
     public function index(): Response
     {
         return $this->render('index.html.twig');
-    }
-
-    #[Route('/article/{slug}', name: 'about')]
-    public function article(#[MapEntity(mapping: ['slug' => 'slug'])] Article $article): Response
-    {
-        return $this->render('article.html.twig', [
-            'article' => $article,
-        ]);
     }
 }
