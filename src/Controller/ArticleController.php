@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class ArticleController extends AbstractController
 {
-    #[Route('/articles', name: 'app_article')]
+    #[Route('/articles', name: 'app_article_index')]
     public function index(): Response
     {
         $articleList = ArticleData::getArticles();
@@ -19,7 +19,7 @@ class ArticleController extends AbstractController
         ]);
     }
 
-    #[Route('/articles/{slug}', name: 'article_show')]
+    #[Route('/articles/{slug}', name: 'app_article_show')]
     public function show(string $slug): Response
     {
         $articleList = ArticleData::getArticles();
