@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Bytemeuh - Solutions Digitales Innovantes et Transformation Technologique{% endblock %}
+{% block description %}{{ article.title }}{% endblock %}
+
+{% block body %}
+    <header>
+        <h1>Bytemeuh - Solutions Digitales et Innovation Technologique</h1>
+        <p>Bienvenue sur Bytemeuh, votre partenaire de confiance pour la transformation numérique et les solutions
+            technologiques modernes.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>{{ article.title }}</h2>
+            {{ article.content|raw }}
+        </section>
+    </main>
+
+    <footer>
+        <p>Contactez-nous : <a href="mailto:contact@bytemeuh.com">contact@bytemeuh.com</a></p>
+        <p>&copy; 2024 Bytemeuh - Tous droits réservés</p>
+        <nav>
+            <a href="#about">À Propos</a> |
+            <a href="#services">Services</a> |
+            <a href="#portfolio">Réalisations</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+{% endblock %}
