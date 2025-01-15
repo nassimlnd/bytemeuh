@@ -1,13 +1,14 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Bytemeuh - Solutions Digitales Innovantes et Transformation Technologique{% endblock %}
-{% block description %}Découvrez Bytemeuh, la référence en solutions innovantes pour le digital et la technologie. Trouvez nos services, conseils, et réalisations pour transformer votre présence en ligne.{% endblock %}
+{% block title %}Bytemeuh - Solutions Digitales Innovantes{% endblock %}
+{% block description %}Découvrez Bytemeuh, la référence en solutions innovantes pour le digital. Trouvez nos services, et conseils pour transformer votre présence en ligne.{% endblock %}
 
 {% block body %}
     <header>
         <h1>Bytemeuh - Solutions Digitales et Innovation Technologique</h1>
-        <p>Bienvenue sur Bytemeuh, votre partenaire de confiance pour la transformation numérique et les solutions
-            technologiques modernes.</p>
+        <p>Découvrez Bytemeuh, une agence spécialisée dans les solutions digitales sur mesure. Nous transformons votre
+            présence en ligne grâce à des services innovants en développement web, marketing digital, et consultation
+            technologique. Rejoignez des entreprises qui ont déjà boosté leur croissance grâce à nous !</p>
     </header>
 
     <main>
@@ -16,6 +17,17 @@
             <p>Bytemeuh est spécialisé dans l'accompagnement des entreprises à travers des solutions digitales
                 personnalisées. Nous proposons une approche sur-mesure pour optimiser votre présence en ligne et
                 transformer vos outils numériques.</p>
+        </section>
+
+        <section>
+            <h2>Nos articles</h2>
+            <ul>
+                {% for article in articles %}
+                    <li>
+                        <a href="{{ path('app_article_show', {slug: article.slug}) }}">{{ article.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
         </section>
 
         <section>
@@ -41,9 +53,21 @@
             <h2>Nos Réalisations</h2>
             <p>Découvrez quelques projets récents qui mettent en avant l'impact de Bytemeuh dans le secteur digital.</p>
             <div>
-                <img src="/img/design.webp" alt="Projet 1 - Site Web E-commerce" loading="lazy">
-                <img src="/img/fortnite.webp" alt="Projet 2 - Application Mobile" loading="lazy">
+                <img src="/img/design.webp" alt="Conception d'un site e-commerce par Bytemeuh, spécialiste en transformation digitale" loading="lazy">
+                <img src="/img/fortnite.webp" alt="Création d'une application mobile innovante par Bytemeuh" loading="lazy">
             </div>
+        </section>
+
+        <section>
+            <h2>Questions Fréquemment Posées</h2>
+            <dl>
+                <dt>Qu'est-ce que la transformation digitale ?</dt>
+                <dd>La transformation digitale consiste à utiliser les technologies numériques pour améliorer les processus,
+                    augmenter l'efficacité et créer de nouvelles opportunités pour votre entreprise.</dd>
+                <dt>Quels types de projets gérez-vous ?</dt>
+                <dd>Nous couvrons une large gamme de projets, incluant le développement de sites web, le marketing digital,
+                    et la consultation en stratégie numérique.</dd>
+            </dl>
         </section>
     </main>
 

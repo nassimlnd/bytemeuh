@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controller;
 
+use App\Data\ArticleData;
 use App\Entity\Article;
 use Symfony\Bridge\Doctrine\Attribute\MapEntity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -15,6 +16,10 @@ final class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(): Response
     {
-        return $this->render('index.html.twig');
+        $articles = ArticleData::getArticles();
+
+        return $this->render('index.html.twig',
+            ['articles' => $articles]
+        );
     }
 }
