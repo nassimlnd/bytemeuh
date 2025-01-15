@@ -137,7 +137,7 @@ class ArticleData
         $markdown = preg_replace('/(<li>.*<\/li>)/s', '<ul>$1</ul>', $markdown);
 
         // Convertir les sauts de ligne en <br> pour les paragraphes simples
-        $markdown = nl2br($markdown);
+        // $markdown = nl2br($markdown);
 
         // Convertir les --- ou *** en <hr>
         $markdown = preg_replace('/^(-{3,}|\\*{3,})$/m', '<hr>', $markdown);
