@@ -17,6 +17,82 @@
 
         <meta name="google-site-verification" content="{{ google_key }}" />
 
+        {# Organization schema #}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Bytemeuh",
+                "url": "https://sruuua.fr",
+                "logo": "https://sruuua.fr/img/design.webp",
+                "description": "Découvrez Bytemeuh, la référence en solutions digitales et technologies innovantes pour votre entreprise.",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "contact@bytemeuh.com",
+                    "contactType": "Service client",
+                    "availableLanguage": "French"
+                }
+            }
+        </script>
+
+        {# Website schema #}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                "name": "Bytemeuh",
+                "url": "https://sruuua.fr",
+            }
+        </script>
+
+        {# Blog schema #}
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Blog",
+                "name": "Bytemeuh Blog",
+                "url": "https://sruuua.fr/articles",
+                "blogPost": [
+                    {
+                        "@type": "BlogPosting",
+                        "headline": "Bienvenue sur Bytemeuh",
+                        "url": "https://sruuua.fr/articles/bienvenue-sur-bytemeuh",
+                        "datePublished": "2024-11-01",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Auteur de Bytemeuh"
+                        },
+                        "image": "https://sruuua.fr/img/design.webp",
+                        "description": "Découvrez notre introduction à Bytemeuh et les solutions digitales que nous proposons."
+                    },
+                    {
+                        "@type": "BlogPosting",
+                        "headline": "Astuces pour coder comme une vache",
+                        "url": "https://sruuua.fr/articles/astuces-pour-coder-comme-une-vache",
+                        "datePublished": "2024-11-15",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Auteur de Bytemeuh"
+                        },
+                        "image": "https://sruuua.fr/img/design.webp",
+                        "description": "Apprenez des astuces uniques pour améliorer votre code avec une approche innovante."
+                    },
+                    {
+                        "@type": "BlogPosting",
+                        "headline": "Bytemeuh : Ferme ultime pour devs",
+                        "url": "https://sruuua.fr/articles/bytemeuh-ferme-ultime-pour-devs",
+                        "datePublished": "2024-11-30",
+                        "author": {
+                            "@type": "Person",
+                            "name": "Auteur de Bytemeuh"
+                        },
+                        "image": "https://sruuua.fr/img/design.webp",
+                        "description": "Découvrez comment Bytemeuh transforme le quotidien des développeurs grâce à des solutions sur mesure."
+                    }
+                ]
+            }
+        </script>
+
         <link rel="stylesheet" href="/styles/app.css">
 
         <link rel="icon" href="/favicon.ico">
